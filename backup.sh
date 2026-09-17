@@ -32,4 +32,4 @@ ls -lh "${DESTINO}/${ARCHIVO_BACKUP}"
 echo "==> Limpiando respaldos con más de ${DIAS_RETENCION} días..."
 find "$DESTINO" -name "backup_*.tar.gz" -type f -mtime +"$DIAS_RETENCION" -exec rm -v {} \;
 
-echo "==> Proceso finalizado correctamente."
+echo "==> Proceso finalizado correctamente."gh repo create mini-backup --public --source=. --remote=origin --pushgh repo create mini-backup --public --source=. --remote=origin --pushgh repo create mini-backup --public --source=. --remote=origin --push
